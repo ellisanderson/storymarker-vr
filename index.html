@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Marker VR</title>
+    <script src="https://use.fontawesome.com/d631437608.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,900" rel="stylesheet">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <a-scene>
+    <a-assets>
+      <img id="barcelona" src="images/barcelona360.jpg">
+      <img id="who" src="images/monument-skins/who.png">
+      <img id="where" src="images/monument-skins/where.png">
+      <img id="why" src="images/monument-skins/why.png">
+      <img id="what" src="images/monument-skins/what.png">
+      <img id="truth" src="images/monument-skins/truth.png">
+      <img id="truth2" src="images/monument-skins/truth2.png">
+      <img id="unknown" src="images/monument-skins/unknown.png">
+      <img id="lesson" src="images/monument-skins/lesson.png">
+      <img id="next" src="images/monument-skins/next.png">
+      <img id="next2" src="images/monument-skins/next2.png">
+    </a-assets>
+    <a-camera>
+      <a-cursor color="white" position="0 0 -1"></a-cursor>
+    </a-camera>
+    <a-sky src="#barcelona"></a-sky>
+
+    <!-- <a-box src="#who" color="#F7931E" width=".5" height=".5" depth=".5" position="-2 1.5 -1" opacity=".2" ></a-box>
+    <a-box src="#where" color="#A2BBD4" width=".5" height=".5" depth=".5" position="-1.5 1.5 -1" opacity=".2" ></a-box>
+    <a-box src="#why" color="#97A88E" width=".5" height=".5" depth=".5" position="-2 1 -1" opacity=".2" ></a-box>
+    <a-box src="#what" color="#F8A5C9" width=".5" height=".5" depth=".5" position="-1.5 1 -1" opacity=".2" ></a-box>
+    <a-box src="#truth2" color="#F5E8D0" width=".5" height=".5" depth=".5" position="-2 .5 -1" opacity=".2" ></a-box>
+    <a-box src="#unknown" color="#67ADA9" width=".5" height=".5" depth=".5" position="-1.5 .5 -1" opacity=".2" ></a-box>
+    <a-box src="#lesson" color="#9E84B7" width=".5" height=".5" depth=".5" position="-2 0 -1" opacity=".2" ></a-box>
+    <a-box src="#next2" color="#FCEE62" width=".5" height=".5" depth=".5" position="-1.5 0 -1" opacity=".2" ></a-box> -->
+
+<!-- monument 1 -->
+    <a-box src="#who" color="#F7931E" width=".5" height=".5" depth=".5" position="-1 3.5 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#where" color="#A2BBD4" width=".5" height=".5" depth=".5" position="-1 3 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#why" color="#97A88E" width=".5" height=".5" depth=".5" position="-1 2.5 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#what" color="#F8A5C9" width=".5" height=".5" depth=".5" position="-1 2 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#truth2" color="#F5E8D0" width=".5" height=".5" depth=".5" position="-1 1.5 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#unknown" color="#67ADA9" width=".5" height=".5" depth=".5" position="-1 1 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#lesson" color="#9E84B7" width=".5" height=".5" depth=".5" position="-1 .5 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box src="#next2" color="#FCEE62" width=".5" height=".5" depth=".5" position="-1 0 -1" opacity=".2" rotation="0 7 0"></a-box>
+
+<!-- monument 2 -->
+    <a-box  color="purple" width=".5" height=".5" depth=".5" position="-4 0 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="salmon" width=".5" height=".5" depth=".5" position="-4 .5 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="blue" width=".5" height=".5" depth=".5" position="-4 1 -1" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="-4 1.5 -1" opacity=".2" rotation="0 7 0"></a-box>
+
+<!-- monument 3 -->
+    <a-box  color="orange" width=".5" height=".5" depth=".5" position="-3.5 0 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="orange" width=".5" height=".5" depth=".5" position="-3.5 .5 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="orange" width=".5" height=".5" depth=".5" position="-3.5 1 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="black" width=".5" height=".5" depth=".5" position="-3.5 1.5 -10" opacity=".2" rotation="0 7 0"></a-box>
+
+<!-- monument 4 -->
+    <a-box  color="lightblue" width=".5" height=".5" depth=".5" position="-3 0 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="yellow" width=".5" height=".5" depth=".5" position="-3 .5 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="purple" width=".5" height=".5" depth=".5" position="-3 1 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="crimson" width=".5" height=".5" depth=".5" position="-3 1.5 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="brown" width=".5" height=".5" depth=".5" position="-3 2 -10" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="grey" width=".5" height=".5" depth=".5" position="-3 2.5 -10" opacity=".2" rotation="0 7 0"></a-box>
+
+<!-- monument 5 -->
+    <a-box  color="crimson" width=".5" height=".5" depth=".5" position="1 0 -3" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="lightblue" width=".5" height=".5" depth=".5" position="1 .5 -3" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="gold" width=".5" height=".5" depth=".5" position="1 1 -3" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="1 1.5 -3" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="1 2 -3" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="dimgrey" width=".5" height=".5" depth=".5" position="1 2.5 -3" opacity=".2" rotation="0 7 0"></a-box>
+
+<!-- monument 6 -->
+    <a-box  color="black" width=".5" height=".5" depth=".5" position="1.7 -2 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="black" width=".5" height=".5" depth=".5" position="1.7 -1.5 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="black" width=".5" height=".5" depth=".5" position="1.7 -1 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="1.7 -.5 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="1.7 0 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="black" width=".5" height=".5" depth=".5" position="1.7 .5 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="1.7 1 6" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="black" width=".5" height=".5" depth=".5" position="1.7 1.5 6" opacity=".2" rotation="0 7 0"></a-box>
+
+<!-- monument 7 -->
+    <a-box  color="pink" width=".5" height=".5" depth=".5" position="8 5.5 -1" opacity=".2" rotation="0 20 0"></a-box>
+    <a-box  color="salmon" width=".5" height=".5" depth=".5" position="8 6 -1" opacity=".2" rotation="0 20 0"></a-box>
+    <a-box  color="crimson" width=".5" height=".5" depth=".5" position="8 6.5 -1" opacity=".2" rotation="0 20 0"></a-box>
+
+<!-- random monuments -->
+    <a-box  color="yellow" width=".5" height=".5" depth=".5" position="0 0 -20" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="red" width=".5" height=".5" depth=".5" position="-3 0 -5" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="white" width=".5" height=".5" depth=".5" position="-2 0 -4" opacity=".2" rotation="0 7 0"></a-box>
+    <a-box  color="lightgreen" width=".5" height=".5" depth=".5" position="-1.2 0 1.3" opacity=".2" rotation="0 7 0"></a-box>
+
+  </a-scene>
+
+
+  <div class="info">?</div>
+  <div class="infocontainer">
+    <div class="infobox">
+      <div class="close">x</div>
+      <p><b>It's Sunday.</b> You've just left the restaurant where you and your friends had a late brunch after a late night. You're tired but it's the right kind, a euphoric daze. Walking home to catch up on some emails before starting the week you receive a message informing you that you've stepped into a <em>Story Marker</em> hotspot. Looking through your screen you see the markers strewn across the landscape. As you activate the messages you remember hearing of a political protest in the area the other week. These must be from that event, you think. Inspired, you leave your own marker and think about how to get more involved.</p>
+    </div>
+  </div>
+
+  <div class="image-trigger">Interface Mockup</div>
+  <div class="image-popup">
+    <img src="images/prototype.png" alt="interface mockup">
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
